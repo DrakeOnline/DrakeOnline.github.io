@@ -1,5 +1,8 @@
-title: Cayman theme
+title: Drake Makes
 description: Cayman is a clean, responsive theme for GitHub Pages.
-show_downloads: true
-google_analytics:
+url: "https://drakemakes.com"
 theme: jekyll-theme-cayman
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
