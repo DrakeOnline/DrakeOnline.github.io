@@ -1,15 +1,12 @@
 ---
 layout: default
+permalink: /posts/
 ---
 
-# Welcome to Drake Makes
-
-This is my personal place on the web where I write about life, projects, and anything else I can think of.
-
-## Recent Posts
+# All Posts
 
 <ul class="post-list">
-  {% for post in site.posts limit:5 %}
+  {% for post in site.posts %}
     <li>
       <span class="post-date">{{ post.date | date: "%b %d, %Y" }}</span>
       <a class="post-link" href="{{ post.url | relative_url }}">
@@ -18,4 +15,3 @@ This is my personal place on the web where I write about life, projects, and any
     </li>
   {% endfor %}
 </ul>
-
