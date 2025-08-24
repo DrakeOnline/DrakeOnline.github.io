@@ -1,0 +1,70 @@
+.page-header {
+    display: inline-flex;
+    width: 100%;
+    align-content: center;
+    justify-content: space-between;
+    position: sticky;
+    padding: 2rem;
+    height: 100px;
+    border-bottom: 2px solid #b25642;
+}
+
+.header-title {
+    height: 42px;
+}
+
+.header-title h1 {
+    font-size: 28px;
+}
+
+.main-nav {
+    display: inline-flex;
+    height: 100%;
+    align-content: center;
+    flex-wrap: initial;
+    margin-top: 0;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    text-transform: lowercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.main-nav li {
+    display: inline-flex;
+    padding-top: 9px;
+}
+
+.project-name {
+    margin-bottom: 0;
+    word-spacing: -5px;
+}
+
+.drake-script {
+    font-family: 'Parisienne', cursive;
+    font-size: 32px;
+    font-weight: normal;
+}
+
+.makes-gugi {
+    font-family: 'Gugi', cursive;
+    letter-spacing: 1px;
+    font-size: 25px;
+}
+
+@media screen and (max-width: 660px) {
+  /* Add your styles for screens smaller than 660px here */
+  .page-header {
+    display: block;
+    height: 130px;
+  }
+
+  .header-title {
+    display: block;
+    height: 35px;
+  }
+
+  .main-nav {
+    display: block;
+  }
+}
