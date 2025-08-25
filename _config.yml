@@ -1,17 +1,8 @@
 title: Drake Makes
-description: My personal place on the web where I write about life, projects, and anything else I can think of.
-url: "https://drakeonline.github.io"
+url: "https://drakemakes.com"
 baseurl: ""
-github:
-  username: DrakeOnline
-
-remote_theme: pages-themes/cayman@v0.2.0
-
+theme: jekyll-theme-cayman
 markdown: kramdown
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-github-metadata
-  - jekyll-remote-theme
