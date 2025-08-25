@@ -5,6 +5,8 @@ baseurl: ""
 github:
   username: DrakeOnline
 
+remote_theme: pages-themes/cayman@v0.2.0
+
 markdown: kramdown
 plugins:
   - jekyll-feed
@@ -12,3 +14,4 @@ plugins:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-github-metadata
+  - jekyll-remote-theme
