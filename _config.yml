@@ -1,7 +1,14 @@
 title: Drake Makes
-url: "https://drakemakes.com"
-theme: jekyll-theme-cayman
+description: My personal place on the web where I write about life, projects, and anything else I can think of.
+url: "https://drakeonline.github.io"
+baseurl: ""
+github:
+  username: DrakeOnline
+
 markdown: kramdown
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-github-metadata
