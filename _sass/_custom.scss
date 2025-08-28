@@ -1,0 +1,198 @@
+.page-header {
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    padding: 0 2rem;
+    height: 100px;
+    border-bottom: 2px solid #ff7f50;
+}
+
+.header-content-wrapper {
+    display: flex;
+    width: 75%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-title {
+    height: 42px;
+}
+
+.header-title h1 {
+    font-size: 28px;
+}
+
+.main-nav ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: initial;
+    margin-top: 0;
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.main-nav li {
+    margin-right: 25px;
+}
+
+.main-nav li:last-child {
+    margin-right: 0;
+}
+
+.main-nav a {
+    color: #FFFFFF !important;
+    text-decoration: none !important;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    text-transform: lowercase;
+    font-size: 18px;
+    letter-spacing: 1px;
+    position: relative;
+    top: 5px;
+}
+
+.main-nav a:hover {
+    text-decoration: none !important;
+}
+
+.project-name {
+    margin-bottom: 0;
+    word-spacing: -5px;
+}
+
+.drake-script {
+    font-family: 'Parisienne', cursive;
+    font-size: 32px;
+    font-weight: normal;
+}
+
+.makes-gugi {
+    font-family: 'Gugi', cursive;
+    letter-spacing: 1px;
+    font-size: 25px;
+}
+
+@media screen and (max-width: 660px) {
+  /* Add your styles for screens smaller than 660px here */
+  .page-header {
+    display: block;
+    height: 130px;
+  }
+
+  .header-title {
+    display: block;
+    height: 35px;
+  }
+
+  .main-nav ul {
+    display: block;
+    padding-left: 0;
+  }
+}
+
+.disabled-nav {
+  position: relative; /* Needed for tooltip positioning */
+  cursor: not-allowed;
+}
+
+.disabled-nav > * {
+  pointer-events: none; /* Make the child (the link) unclickable */
+  opacity: 0.5; /* Visually indicate it's disabled */
+}
+
+.disabled-nav:hover::before {
+  content: "In development";
+  position: absolute;
+  bottom: 125%; /* Position above the element */
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px;
+  border-radius: 3px;
+  background: #000;
+  color: #fff;
+  font-size: 12px;
+  white-space: nowrap;
+  z-index: 10;
+}
+
+.quote-container {
+  background: linear-gradient(to right, #303030, #555, #303030);
+  padding: 20px;
+  border-radius: 15px;
+  margin-top: 2em;
+  position: relative;
+  opacity: 1 !important; /* Override the fade-in */
+}
+
+.quote-container::before {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #303030;
+  opacity: 1;
+  transition: opacity 5s ease-out;
+}
+
+.quote-container.visible::before {
+  opacity: 0;
+}
+
+.quote-container img {
+  border: 2px solid #ff7f50;
+  border-radius: 10px;
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 5s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+}
+
+.site-footer {
+  border-top: none;
+}
+
+p {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  line-height: 2;
+  text-indent: 2em;
+  margin-bottom: 1.5em;
+  font-size: 0.95em;
+}
+
+.main-content {
+  max-width: 42em;
+  margin: 0 auto;
+  padding: 2em 1em;
+}
+
+.post-title {
+  font-size: 3em;
+  text-align: center;
+  color: #ff7f50;
+  margin-bottom: 1.5em;
+  width: 80vw;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.title-divider {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(255, 127, 80, 0), rgba(255, 127, 80, 0.75), rgba(255, 127, 80, 0));
+  width: 60vw;
+  margin: 2em 0;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}

@@ -18,4 +18,3 @@ This is my personal place on the web where I write about life, projects, and any
     </li>
   {% endfor %}
 </ul>
-

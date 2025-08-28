@@ -10,30 +10,30 @@
     <meta name="theme-color" content="#157878">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
     {% include head-custom.html %}
   </head>
   <body>
     <header class="page-header" role="banner">
-      <div class="header-title">
-        <h1 class="project-name"><span class="drake-script">Drake</span> <span class="makes-gugi">Makes</span></h1>
+      <div class="header-content-wrapper">
+        <div class="header-title">
+          <h1 class="project-name"><span class="drake-script">Drake</span> <span class="makes-gugi">Makes</span></h1>
+        </div>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/posts">Posts</a></li>
+            <li><span class="disabled-nav"><a href="/about">About</a></span></li>
+            <li><span class="disabled-nav"><a href="/misc">Misc</a></span></li>
+          </ul>
+        </nav>
       </div>
-      <nav class="main-nav">
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/posts">Posts</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/misc">Misc</a></li>
-        </ul>
-      </nav>
     </header>
 
     <main id="content" class="main-content" role="main">
       {{ content }}
 
-      <footer class="site-footer">
-        
-      </footer>
+      <footer class="site-footer"></footer>
     </main>
+    <script src="{{ '/assets/js/scroll-animation.js' | relative_url }}"></script>
   </body>
 </html>
