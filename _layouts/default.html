@@ -13,10 +13,23 @@
     {% include head-custom.html %}
   </head>
   <body>
+    <div id="loader">
+      <div class="loader-content">
+        <div class="loader-logo">
+          <span class="drake-script">Drake</span> <span class="makes-gugi">Makes</span>
+        </div>
+        <div class="loader-spinner"></div>
+      </div>
+    </div>
     <header class="page-header" role="banner">
       <div class="header-content-wrapper">
         <div class="header-title">
           <h1 class="project-name"><span class="drake-script">Drake</span> <span class="makes-gugi">Makes</span></h1>
+        </div>
+        <div class="hamburger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
         <nav class="main-nav">
           <ul>
@@ -34,6 +47,8 @@
 
       <footer class="site-footer"></footer>
     </main>
-    <script src="{{ '/assets/js/scroll-animation.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/text-appearance.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/mobile-menu.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/page-transitions.js' | relative_url }}"></script>
   </body>
 </html>
