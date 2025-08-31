@@ -1,0 +1,18 @@
+<ul class="post-list">
+  {% for post in site.posts %}
+    <li>
+      <a class="post-box-link" href="{{ post.url | relative_url }}">
+        <div class="post-header-flex">
+          <span class="post-link">{{ post.title | escape }}</span>
+          <span class="post-date">{{ post.date | date: "%b %d, %Y" }}</span>
+        </div>
+        <div class="post-excerpt">
+          {{ post.excerpt | strip_html | truncatewords: 25 }}
+        </div>
+        <div class="post-overlay">
+          <div class="overlay-text">read?</div>
+        </div>
+      </a>
+    </li>
+  {% endfor %}
+</ul>

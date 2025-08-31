@@ -9,6 +9,8 @@ tags: failure resilience happiness
 
 Although we have complicated it, something Failing just means it didn't work. That's it. Now, since that doesn't really clarify anything, let's talk about what Failure isn't.
 
+<!--more-->
+
 Failure isn't permanent. Failure isn't necessarily reflective of the Failer. Failure has isolated damages, but new attempts only inherit the knowledge of Failings, making them more likely to succeed.
 
 So, to summarize, it isn't permanent, doesn't necessarily mean anything about you, and every Failure strengthens the next attempt. If you were to take away the emotional detriment of failure, it almost starts to sound like a good thing.
@@ -21,7 +23,7 @@ If you then began to see yourself as a failure, well, that's where the real dama
 
 ## Failer V Failure
 
-I acknowledge that my indifference toward Failing likely stems from it being plentiful and embedded in my daily routine as a software engineer. Build errors, code errors, computer errors, 3rd-party library errors, you name it, I've seen it. 
+I acknowledge that my indifference toward Failing likely stems from it being plentiful and embedded in my daily routine as a software engineer. Build errors, code errors, computer errors, 3rd-party library errors, you name it, I've seen it.
 
 Now that makes me a professional Failer by definition, one who is paid to Fail. This is different from a Failure, however. Failurism is permanent, it is a label that is unchanging and uneventful, but a label that can be removed at any time. You see, Failure is a personal choice, a submission and surrendering to the friction that came with your dream. So when you Fail, and that Failing is followed by no remediation, now you are a Failure. We're all Failures at some point, buffeted by life's scourges of responsibilities and thought-occupying obligations. However, it is a choice to stay a failure. As soon as you take the smallest step toward the dream once more, you have swapped nametags from Failure to Failer. A very prestigious title, in my opinion.
 
@@ -42,7 +44,7 @@ With every Failure, comes a sweeter life.
 <div class="quote-container" align="center">
   <img src="https://upload.wikimedia.org/wikipedia/commons/3/36/Sigmund_Freud%2C_by_Max_Halberstadt_%28cropped%29.jpg" alt="A picture of Sigmund Freud" width="60%">
   <br>
-  <em><small>“One day, in retrospect, the years of struggle will strike you as the most beautiful.”<br>-Sigmund Freud</small></em>
+  <small><em>“One day, in retrospect, the years of struggle will strike you as the most beautiful.”</em><br>— Sigmund Freud</small>
 </div>
 
 ## "WILL YOU JUST NOT WORK ALREADY?"

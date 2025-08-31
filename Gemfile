@@ -8,4 +8,6 @@ gem "kramdown" # Needed by Jekyll, often included by default
 gem "jekyll-feed" # For RSS feed
 gem "jekyll-seo-tag" # Good for SEO
 
+gem "wdm", ">= 0.1.0" if Gem.win_platform?
+
 gemspec

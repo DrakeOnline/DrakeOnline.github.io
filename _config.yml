@@ -1,4 +1,4 @@
-title: Drake Makes
+title: DrakeMakes
 url: "https://drakemakes.com"
 baseurl: ""
 theme: jekyll-theme-cayman
@@ -6,3 +6,10 @@ markdown: kramdown
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+
+collections:
+  posts:
+    output: true
+    permalink: /writing/:title.html
+
+excerpt_separator: "<!--more-->"

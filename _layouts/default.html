@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     {% include head-custom.html %}
   </head>
-  <body>
+  <body class="{{ page.body_class }}">
     <div id="loader">
       <div class="loader-content">
         <div class="loader-logo">
@@ -24,7 +24,7 @@
     <header class="page-header" role="banner">
       <div class="header-content-wrapper">
         <div class="header-title">
-          <h1 class="project-name"><span class="drake-script">Drake</span> <span class="makes-gugi">Makes</span></h1>
+          <a href="/" class="header-logo-link"><h1 class="project-name"><span class="drake-script">Drake</span> <span class="makes-gugi">Makes</span></h1></a>
         </div>
         <div class="hamburger-menu">
           <span></span>
@@ -34,19 +34,35 @@
         <nav class="main-nav">
           <ul>
             <li><a href="/">Home</a></li>
-            <li><a href="/posts">Posts</a></li>
-            <li><span class="disabled-nav"><a href="/about">About</a></span></li>
-            <li><span class="disabled-nav"><a href="/misc">Misc</a></span></li>
+           <li><a href="{% link pages/writing.md %}">Writing</a></li>
+            <li><span class="disabled-nav"><a href="{% link pages/art.md %}">Art</a></span></li>
+            <li><span class="disabled-nav"><a href="{% link pages/about.md %}">About</a></span></li>
           </ul>
         </nav>
       </div>
     </header>
 
     <main id="content" class="main-content" role="main">
-      {{ content }}
-
-      <footer class="site-footer"></footer>
+      {% if page.layout == 'post' %}
+        {{ content }}
+      {% else %}
+        <div class="main-content-wrapper">
+          {{ content }}
+        </div>
+      {% endif %}
     </main>
+
+    <footer class="site-footer">
+      <div class="bottom-nav">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="{% link pages/writing.md %}">Writing</a></li>
+          <li><span class="disabled-nav"><a href="{% link pages/art.md %}">Art</a></span></li>
+          <li><span class="disabled-nav"><a href="{% link pages/about.md %}">About</a></span></li>
+        </ul>
+      </div>
+      <p class="copyright">&copy; {{ site.time | date: '%Y' }} Drake Cummings</p>
+    </footer>
     <script src="{{ '/assets/js/text-appearance.js' | relative_url }}"></script>
     <script src="{{ '/assets/js/mobile-menu.js' | relative_url }}"></script>
     <script src="{{ '/assets/js/page-transitions.js' | relative_url }}"></script>
