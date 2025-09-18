@@ -1,0 +1,11 @@
+- title: "Rembrandt Study"
+  date: "2022"
+  description: "A study of Rembrandt's style, focusing on his use of light and shadow."
+  medium: "graphite"
+  material: "newsprint"
+  size: "9\" x 12\""
+  images:
+    - "original.jpg"
+    - "closeup1.jpg"
+    - "closeup2.jpg"
+  image_path: "/assets/images/rembrandt_study/"

@@ -11,6 +11,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     {% include head-custom.html %}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
   </head>
   <body class="{{ page.body_class }}">
     <div id="loader">
@@ -33,10 +34,10 @@
         </div>
         <nav class="main-nav">
           <ul>
-            <li><a href="/">Home</a></li>
-           <li><a href="{% link pages/writing.md %}">Writing</a></li>
-            <li><span class="disabled-nav"><a href="{% link pages/art.md %}">Art</a></span></li>
-            <li><span class="disabled-nav"><a href="{% link pages/about.md %}">About</a></span></li>
+            <li><a href="/">Home<span class="underline"></span></a></li>
+           <li><a href="{% link pages/writing.md %}">Writing<span class="underline"></span></a></li>
+            <li><a href="{% link pages/art.md %}">Art<span class="underline"></span></a></li>
+            <li><span class="disabled-nav"><a href="{% link pages/about.md %}">About<span class="underline"></span></a></span></li>
           </ul>
         </nav>
       </div>
@@ -57,14 +58,18 @@
         <ul>
           <li><a href="/">Home</a></li>
           <li><a href="{% link pages/writing.md %}">Writing</a></li>
-          <li><span class="disabled-nav"><a href="{% link pages/art.md %}">Art</a></span></li>
+          <li><a href="{% link pages/art.md %}">Art</a></li>
           <li><span class="disabled-nav"><a href="{% link pages/about.md %}">About</a></span></li>
         </ul>
       </div>
       <p class="copyright">&copy; {{ site.time | date: '%Y' }} Drake Cummings</p>
     </footer>
+    <script src="{{ '/assets/js/page-transitions.js' | relative_url }}"></script>
     <script src="{{ '/assets/js/text-appearance.js' | relative_url }}"></script>
     <script src="{{ '/assets/js/mobile-menu.js' | relative_url }}"></script>
-    <script src="{{ '/assets/js/page-transitions.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/underline.js' | relative_url }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="{{ '/assets/js/art.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/art_carousel.js' | relative_url }}"></script>
   </body>
 </html>

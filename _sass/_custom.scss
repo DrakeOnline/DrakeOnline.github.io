@@ -61,6 +61,21 @@
     top: 3px;
 }
 
+.main-nav a .underline {
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: #FFFFFF;
+    transition: width 0.6s ease-in-out;
+}
+
+.main-nav a:hover .underline,
+.main-nav a.active .underline {
+    width: 100%;
+}
+
 .post-title-wrapper {
   padding: 0 10vw;
 }
@@ -177,9 +192,6 @@
   overflow: hidden;
 }
 
-#recent-writing {
-    text-align: center;
-  }
 
 .post-box-link:hover {
   text-decoration: none;
@@ -383,7 +395,7 @@ body.post-page .main-content-wrapper {
   word-wrap: break-word;
 
   :first-child {
-    margin-top: 0;
+    margin-top: 0 !important;
   }
 
   @include large {
@@ -715,10 +727,138 @@ body:not(.page-loaded) {
 }
 
 .main-content-wrapper h1,
+.main-content-wrapper h1,
 .main-content-wrapper h2,
 .main-content-wrapper h3,
 .main-content-wrapper h4,
 .main-content-wrapper h5,
 .main-content-wrapper h6 {
   color: $body-link-color !important;
+}
+
+.main-content-wrapper h1 {
+  text-align: center;
+}
+
+/* Art page styles */
+.art-piece {
+  display: flex;
+  margin-bottom: 4rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #444;
+}
+
+.art-piece:last-child {
+  border-bottom: none;
+}
+
+.art-piece-info {
+  flex: 1;
+  padding-right: 2rem;
+}
+
+.art-piece-info h2 {
+  margin-top: 0;
+  font-size: 2rem;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+
+.art-piece-date {
+  color: #ccc;
+  font-style: italic;
+  margin-bottom: 0;
+  font-size: 1.2rem;
+  display: inline;
+}
+
+.art-piece-info > p {
+  text-align: right;
+}
+
+.art-piece-details {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-top: 2rem;
+}
+
+.art-piece-images {
+  flex: 3;
+  display: flex;
+  gap: 1rem;
+}
+
+.art-piece-image {
+  flex: 1;
+}
+
+.art-piece-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.art-piece-image img:hover {
+  transform: scale(1.05);
+}
+
+.fancybox__container {
+  visibility: visible !important;
+}
+
+.art-carousel {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  margin-top: 2rem;
+  z-index: 1;
+}
+
+.art-carousel-track {
+  display: flex;
+  width: fit-content;
+  animation: scroll 80s linear infinite;
+}
+
+.art-carousel:hover .art-carousel-track {
+  animation-play-state: paused;
+}
+
+.art-carousel-item {
+  flex: 0 0 auto;
+  width: 250px;
+  margin-right: 20px;
+  transition: transform 0.3s ease;
+}
+
+.art-carousel-item:hover {
+  transform: scale(1.05);
+}
+
+.art-carousel-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 5px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.visible {
+  opacity: 1;
 }

@@ -1,0 +1,21 @@
+<div class="art-carousel fade-in">
+  <div class="art-carousel-track">
+    {% for art in site.data.art %}
+      {% for image in art.images %}
+        <a href="{% link pages/art.md %}" class="art-carousel-item">
+          <img src="{{ art.image_path }}{{ image }}" alt="{{ art.title }}">
+        </a>
+      {% endfor %}
+  
+      <!-- HACK: Duplicating art data to make the carousel look fuller. -->
+      <!-- Remove this when more art is added. -->
+      {% for art in site.data.art %}
+        {% for image in art.images %}
+          <a href="{% link pages/art.md %}" class="art-carousel-item">
+            <img src="{{ art.image_path }}{{ image }}" alt="{{ art.title }}">
+          </a>
+        {% endfor %}
+      {% endfor %}
+    {% endfor %}
+  </div>
+</div>
